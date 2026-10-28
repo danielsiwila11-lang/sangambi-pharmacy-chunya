@@ -1,437 +1,338 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Sangambi Pharmacy, Chunya, Mbeya, Tanzania. Contact us for pharmacy services and medicine availability.">
-<title>SANGAMBI PHARMACY | Chunya, Mbeya</title>
-
-<style>
-:root {
-  --green: #087443;
-  --dark: #064e32;
-  --light: #eaf7ef;
-  --gold: #f5bd45;
-  --white: #ffffff;
-  --text: #24352c;
-}
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  color: var(--text);
-  background: #f7faf8;
-  line-height: 1.6;
-}
-header {
-  background: var(--white);
-  padding: 14px 6%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 15px;
-  flex-wrap: wrap;
-  box-shadow: 0 2px 12px #0000000c;
-}
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: var(--dark);
-  font-weight: bold;
-  font-size: 19px;
-}
-.logo {
-  background: var(--green);
-  color: white;
-  width: 45px;
-  height: 45px;
-  display: grid;
-  place-items: center;
-  border-radius: 12px;
-  font-size: 27px;
-}
-nav { display: flex; flex-wrap: wrap; gap: 16px; }
-nav a {
-  text-decoration: none;
-  color: var(--dark);
-  font-size: 14px;
-  font-weight: bold;
-}
-.hero {
-  background: linear-gradient(125deg, #064e32, #0c8b50);
-  color: white;
-  padding: 65px 6%;
-  display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  gap: 35px;
-  align-items: center;
-}
-.hero h1 { font-size: clamp(32px, 5vw, 52px); line-height: 1.15; margin: 12px 0; }
-.hero p { font-size: 17px; color: #e4f4e9; }
-.tag {
-  display: inline-block;
-  background: #ffffff20;
-  padding: 7px 13px;
-  border-radius: 30px;
-  font-size: 13px;
-}
-.btn {
-  display: inline-block;
-  border: 0;
-  padding: 12px 19px;
-  border-radius: 7px;
-  font-weight: bold;
-  text-decoration: none;
-  cursor: pointer;
-  margin: 5px 5px 5px 0;
-}
-.btn-gold { background: var(--gold); color: #263a2c; }
-.btn-white { background: white; color: var(--dark); }
-.hero-image {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 18px;
-  background: #ffffff15;
-}
-section { padding: 48px 6%; }
-.section-title { text-align: center; margin-bottom: 28px; }
-.section-title h2 { color: var(--dark); margin-bottom: 5px; }
-.section-title p { color: #66766c; }
-.cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
-}
-.card {
-  background: white;
-  padding: 23px;
-  border-radius: 13px;
-  border: 1px solid #e5eee7;
-  box-shadow: 0 5px 20px #102f1b08;
-}
-.card .emoji { font-size: 32px; }
-.card h3 { color: var(--dark); margin: 8px 0; }
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 14px;
-}
-.gallery img {
-  width: 100%;
-  height: 190px;
-  object-fit: cover;
-  border-radius: 10px;
-  background: #e5eee7;
-}
-#medicines { background: var(--light); }
-.tools {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  margin: 18px 0;
-}
-input, textarea {
-  padding: 12px;
-  border: 1px solid #ccd9cf;
-  border-radius: 7px;
-  font: inherit;
-  width: 100%;
-  background: white;
-}
-.tools input { flex: 1; min-width: 150px; }
-.table-wrap { overflow-x: auto; background: white; border-radius: 10px; }
-table { width: 100%; border-collapse: collapse; min-width: 480px; }
-th, td { text-align: left; padding: 13px; border-bottom: 1px solid #e7eee8; }
-th { background: var(--dark); color: white; }
-.price { color: var(--green); font-weight: bold; }
-.small { color: #66766c; font-size: 13px; }
-.contact-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 22px;
-}
-.contact-link { color: var(--green); font-weight: bold; }
-form { display: grid; gap: 12px; }
-footer {
-  background: #073c29;
-  color: white;
-  padding: 30px 6%;
-  text-align: center;
-}
-footer a { color: #f5d27d; }
-.whatsapp {
-  position: fixed;
-  bottom: 18px;
-  right: 18px;
-  background: #168b4c;
-  color: white;
-  padding: 12px 17px;
-  border-radius: 40px;
-  text-decoration: none;
-  font-weight: bold;
-  box-shadow: 0 4px 15px #0003;
-}
-@media(max-width:700px) {
-  .hero { grid-template-columns: 1fr; padding: 42px 6%; }
-  .hero-image { height: 220px; }
-  .cards, .gallery, .contact-grid { grid-template-columns: 1fr; }
-  nav { gap: 11px; }
-  header { padding: 12px 5%; }
-  section { padding: 38px 5%; }
-}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#087f5b" />
+  <meta name="description" content="SANGAMBI PHARMACY in Chunya, Mbeya, Tanzania. Contact our pharmacy and browse the medicine catalogue." />
+  <title>SANGAMBI PHARMACY | Chunya, Mbeya</title>
+  <style>
+    :root {
+      --green: #087f5b;
+      --green-dark: #075c43;
+      --green-light: #e8f7f0;
+      --mint: #f4fbf7;
+      --ink: #17352b;
+      --muted: #63776e;
+      --border: #dce9e2;
+      --white: #ffffff;
+      --warning: #fff6df;
+      --shadow: 0 12px 35px rgba(15, 70, 48, .09);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: var(--ink); background: #fbfdfb; line-height: 1.6; }
+    a { color: inherit; }
+    .container { width: min(1120px, 92%); margin: 0 auto; }
+    .topbar { background: var(--green-dark); color: #fff; font-size: .88rem; padding: 8px 0; }
+    .topbar .container { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+    header { background: rgba(255,255,255,.97); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 20; backdrop-filter: blur(12px); }
+    .nav { min-height: 78px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+    .logo-mark { width: 48px; height: 48px; display: grid; place-items: center; border-radius: 15px; background: var(--green); color: #fff; font-size: 1.8rem; font-weight: 800; }
+    .brand strong { display: block; letter-spacing: .04em; font-size: 1.04rem; }
+    .brand small { color: var(--muted); font-size: .8rem; }
+    nav { display: flex; align-items: center; gap: 23px; }
+    nav a { text-decoration: none; font-weight: 700; font-size: .92rem; }
+    nav a:hover { color: var(--green); }
+    .menu-toggle { display: none; border: 1px solid var(--border); background: white; padding: 8px 12px; border-radius: 9px; font-size: 1.2rem; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; border: 0; border-radius: 11px; padding: 12px 18px; background: var(--green); color: #fff; font-weight: 700; text-decoration: none; cursor: pointer; transition: transform .15s, background .15s; }
+    .btn:hover { background: var(--green-dark); transform: translateY(-1px); }
+    .btn.secondary { background: #fff; color: var(--green-dark); border: 1px solid var(--border); }
+    .btn.whatsapp { background: #159b57; }
+    .hero { padding: 68px 0 58px; background: radial-gradient(circle at 80% 15%, #d6f3e5 0, transparent 33%), linear-gradient(120deg, #f4fbf7, #fff 72%); }
+    .hero-grid { display: grid; grid-template-columns: 1.12fr .88fr; align-items: center; gap: 48px; }
+    .eyebrow { color: var(--green); font-weight: 800; text-transform: uppercase; letter-spacing: .13em; font-size: .78rem; }
+    h1 { font-size: clamp(2.4rem, 5vw, 4.3rem); line-height: 1.06; letter-spacing: -.04em; margin: 14px 0 20px; }
+    h1 span { color: var(--green); }
+    .hero p { max-width: 590px; color: var(--muted); font-size: 1.08rem; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 25px; }
+    .hero-note { display: flex; gap: 10px; align-items: center; margin-top: 22px; color: var(--muted); font-size: .9rem; }
+    .hero-note span { color: var(--green); font-size: 1.2rem; }
+    .photo-frame { min-height: 350px; border: 2px dashed #9acdb5; border-radius: 28px; background: rgba(255,255,255,.72); display: flex; align-items: center; justify-content: center; text-align: center; padding: 22px; position: relative; overflow: hidden; }
+    .photo-frame img { display: none; width: 100%; height: 100%; max-height: 410px; object-fit: cover; border-radius: 18px; position: absolute; inset: 0; }
+    .photo-placeholder { max-width: 290px; }
+    .photo-placeholder .big-icon { font-size: 4rem; }
+    .photo-placeholder h3 { margin: 8px 0; }
+    .photo-placeholder p { font-size: .9rem; margin: 0 0 16px; }
+    .photo-placeholder input { max-width: 100%; font-size: .85rem; }
+    section { padding: 66px 0; }
+    .section-head { display: flex; align-items: end; justify-content: space-between; gap: 22px; margin-bottom: 28px; }
+    .section-head h2 { font-size: clamp(1.8rem, 3vw, 2.5rem); margin: 5px 0 4px; letter-spacing: -.03em; }
+    .section-head p { color: var(--muted); margin: 0; }
+    .features { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .feature { padding: 23px; background: #fff; border: 1px solid var(--border); border-radius: 18px; box-shadow: var(--shadow); }
+    .feature .icon { width: 45px; height: 45px; display: grid; place-items: center; border-radius: 13px; background: var(--green-light); font-size: 1.4rem; }
+    .feature h3 { margin: 14px 0 6px; }
+    .feature p { margin: 0; color: var(--muted); font-size: .94rem; }
+    #medicines { background: var(--mint); }
+    .inventory-tools { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 18px; }
+    .inventory-tools input, .inventory-tools select, .form-field input, .form-field textarea, .form-field select { border: 1px solid var(--border); border-radius: 10px; padding: 12px 13px; background: white; color: var(--ink); font: inherit; min-width: 0; }
+    .inventory-tools input { flex: 1 1 250px; }
+    .inventory-tools select { flex: 0 1 210px; }
+    .table-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: 15px; background: white; }
+    table { border-collapse: collapse; width: 100%; min-width: 680px; }
+    th, td { padding: 14px 16px; text-align: left; border-bottom: 1px solid #edf2ee; }
+    th { background: #edf8f2; color: #315849; font-size: .82rem; text-transform: uppercase; letter-spacing: .05em; }
+    tr:last-child td { border-bottom: 0; }
+    .price { font-weight: 800; white-space: nowrap; }
+    .pill { display: inline-block; padding: 4px 9px; border-radius: 99px; background: #e8f7ef; color: #087044; font-size: .78rem; font-weight: 700; }
+    .pill.ask { background: #fff4d8; color: #805900; }
+    .inventory-note { color: var(--muted); font-size: .88rem; margin-top: 13px; }
+    .admin-panel { margin-top: 25px; background: white; border: 1px solid var(--border); border-radius: 18px; padding: 22px; }
+    .admin-panel summary { cursor: pointer; font-weight: 800; color: var(--green-dark); }
+    .admin-panel > p { color: var(--muted); font-size: .9rem; }
+    .form-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 16px; }
+    .form-field { display: flex; flex-direction: column; gap: 5px; }
+    .form-field label { font-size: .82rem; font-weight: 700; }
+    .form-field input, .form-field select { width: 100%; }
+    .admin-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
+    .btn.danger { background: #a52d2d; }
+    .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .gallery-slot { min-height: 180px; border: 2px dashed #b9d7c7; background: #f8fcf9; border-radius: 17px; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 18px; text-align: center; overflow: hidden; }
+    .gallery-slot img { display: none; width: 100%; height: 190px; object-fit: cover; border-radius: 11px; }
+    .gallery-slot p { color: var(--muted); margin: 5px 0 10px; font-size: .9rem; }
+    .gallery-slot input { max-width: 100%; font-size: .8rem; }
+    .contact-section { background: #f3faf6; }
+    .contact-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 28px; }
+    .contact-card, .contact-form { background: white; border: 1px solid var(--border); border-radius: 18px; padding: 26px; box-shadow: var(--shadow); }
+    .contact-row { display: flex; gap: 13px; align-items: flex-start; margin: 19px 0; }
+    .contact-row .icon { background: var(--green-light); border-radius: 11px; width: 42px; height: 42px; display: grid; place-items: center; flex-shrink: 0; }
+    .contact-row strong { display: block; }
+    .contact-row span, .contact-row a { color: var(--muted); text-decoration: none; overflow-wrap: anywhere; }
+    .contact-form h3 { margin-top: 0; }
+    .contact-form .form-grid { grid-template-columns: 1fr 1fr; }
+    .contact-form .wide { grid-column: 1 / -1; }
+    .contact-form textarea { min-height: 100px; resize: vertical; }
+    .contact-form .form-field input, .contact-form .form-field textarea { width: 100%; }
+    .notice { padding: 18px 20px; background: var(--warning); border: 1px solid #f1dfac; border-radius: 14px; color: #624d1c; font-size: .92rem; margin-top: 22px; }
+    footer { background: #083d2e; color: #e9f8f0; padding: 28px 0; }
+    footer .container { display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; }
+    footer p { margin: 4px 0; font-size: .88rem; color: #c2dfd1; }
+    .small-link { background: transparent; border: 0; color: #c2dfd1; text-decoration: underline; cursor: pointer; }
+    .empty-state { padding: 28px; text-align: center; color: var(--muted); }
+    @media (max-width: 800px) {
+      .hero-grid, .contact-grid { grid-template-columns: 1fr; }
+      .hero { padding-top: 45px; }
+      .photo-frame { min-height: 280px; }
+      .features { grid-template-columns: 1fr 1fr; }
+      .form-grid { grid-template-columns: 1fr 1fr; }
+      nav { display: none; position: absolute; top: 78px; left: 0; right: 0; background: white; padding: 18px 4%; border-bottom: 1px solid var(--border); flex-direction: column; align-items: stretch; gap: 15px; }
+      nav.open { display: flex; }
+      .menu-toggle { display: block; }
+      .nav > .btn { display: none; }
+    }
+    @media (max-width: 540px) {
+      .topbar .container { justify-content: center; text-align: center; }
+      .features, .gallery-grid, .form-grid, .contact-form .form-grid { grid-template-columns: 1fr; }
+      .section-head { align-items: flex-start; flex-direction: column; }
+      section { padding: 48px 0; }
+      .contact-card, .contact-form, .admin-panel { padding: 19px; }
+      .hero-actions .btn { width: 100%; }
+    }
+  </style>
 </head>
-
 <body>
-<header>
-  <div class="brand">
-    <div class="logo">✚</div>
-    <div>SANGAMBI<br><span style="font-size:12px;letter-spacing:2px">PHARMACY</span></div>
-  </div>
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#medicines">Medicines</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
-
-<main>
-<section class="hero" id="home">
-  <div>
-    <span class="tag">Your Health Matters</span>
-    <h1>Welcome to<br>Sangambi Pharmacy</h1>
-    <p>Your health, our priority. Visit us in Chunya, Mbeya, Tanzania, for pharmacy services and information about medicine availability.</p>
-    <a class="btn btn-gold" href="#contact">Contact Us</a>
-    <a class="btn btn-white" href="#medicines">View Medicines</a>
-  </div>
-  <img class="hero-image"
-       src="https://images.unsplash.com/photo-1576602976047-174e57a47881?auto=format&fit=crop&w=900&q=80"
-       alt="Pharmacy products">
-</section>
-
-<section id="about">
-  <div class="section-title">
-    <h2>About Sangambi Pharmacy</h2>
-    <p>Professional service with care and responsibility.</p>
-  </div>
-  <div class="cards">
-    <div class="card">
-      <div class="emoji">💊</div>
-      <h3>Medicine Availability</h3>
-      <p>Contact our pharmacy to ask about the availability of medicines and health products.</p>
+  <div class="topbar"><div class="container"><span>📍 SANGAMBI, Chunya, Mbeya, Tanzania</span><span>Healthcare information • Medicine availability • Customer support</span></div></div>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="SANGAMBI PHARMACY home"><div class="logo-mark">＋</div><div><strong>SANGAMBI PHARMACY</strong><small>Your health matters to us</small></div></a>
+      <nav id="mainNav"><a href="#home">Home</a><a href="#about">About</a><a href="#medicines">Medicines</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></nav>
+      <a class="btn" href="#contact">Contact Us</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
     </div>
-    <div class="card">
-      <div class="emoji">🤝</div>
-      <h3>Customer Care</h3>
-      <p>We value respectful service and helping customers understand how to use medicines safely.</p>
-    </div>
-    <div class="card">
-      <div class="emoji">📍</div>
-      <h3>Our Location</h3>
-      <p>Sangambi, Chunya, Mbeya, Tanzania.</p>
-    </div>
-  </div>
-</section>
+  </header>
 
-<section id="gallery">
-  <div class="section-title">
-    <h2>Our Gallery</h2>
-    <p>Replace these sample photos with your own pharmacy pictures.</p>
-  </div>
-  <div class="gallery">
-    <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&w=600&q=80" alt="Medicine products">
-    <img src="https://images.unsplash.com/photo-1584017911766-d451b3d0e843?auto=format&fit=crop&w=600&q=80" alt="Healthcare products">
-    <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=600&q=80" alt="Healthcare service">
-  </div>
-</section>
+  <main>
+    <section class="hero" id="home"><div class="container hero-grid">
+      <div>
+        <div class="eyebrow">Welcome to SANGAMBI PHARMACY</div>
+        <h1>Care you can trust.<br><span>Health comes first.</span></h1>
+        <p>Your local pharmacy in Chunya, Mbeya, Tanzania. Contact us to ask about medicine availability, prices, and general pharmacy services.</p>
+        <div class="hero-actions"><a class="btn" href="#medicines">Browse Medicines <span>→</span></a><a class="btn whatsapp" href="https://wa.me/225622946393" target="_blank" rel="noopener">☏ WhatsApp Us</a></div>
+        <div class="hero-note"><span>✓</span> Ask a qualified healthcare professional if you are unsure about a medicine.</div>
+      </div>
+      <div class="photo-frame">
+        <img id="heroImage" alt="SANGAMBI PHARMACY storefront" />
+        <div class="photo-placeholder" id="heroPlaceholder"><div class="big-icon">🏥</div><h3>Add your pharmacy photo</h3><p>Upload a storefront, team, logo, or pharmacy interior picture.</p><input type="file" id="heroUpload" accept="image/*" aria-label="Upload pharmacy main photo" /></div>
+      </div>
+    </div></section>
 
-<section id="medicines">
-  <div class="section-title">
-    <h2>Medicine & Product List</h2>
-    <p>Enter product names and prices below. Changes are saved in this browser.</p>
-  </div>
+    <section id="about"><div class="container">
+      <div class="section-head"><div><div class="eyebrow">About our pharmacy</div><h2>Local care, clear information</h2><p>Use this section to tell customers more about your pharmacy.</p></div></div>
+      <div class="features">
+        <article class="feature"><div class="icon">💊</div><h3>Medicine information</h3><p>Browse the catalogue and contact us to confirm current availability and price before visiting.</p></article>
+        <article class="feature"><div class="icon">🤝</div><h3>Helpful service</h3><p>We encourage customers to ask questions and follow advice from qualified healthcare professionals.</p></article>
+        <article class="feature"><div class="icon">📍</div><h3>Convenient location</h3><p>Find us at SANGAMBI, Chunya, Mbeya, Tanzania. Call or WhatsApp for enquiries.</p></article>
+      </div>
+    </div></section>
 
-  <div class="tools">
-    <input id="search" placeholder="Search products..." aria-label="Search products">
-  </div>
+    <section id="medicines"><div class="container">
+      <div class="section-head"><div><div class="eyebrow">Medicine catalogue</div><h2>Medicines & prices</h2><p>Search the list below. Prices and availability must be confirmed with the pharmacy.</p></div></div>
+      <div class="inventory-tools"><input type="search" id="medicineSearch" placeholder="Search medicine or category…" aria-label="Search medicines" /><select id="categoryFilter" aria-label="Filter by category"><option value="all">All categories</option><option>Prescription medicine</option><option>OTC medicine</option><option>First aid</option><option>Personal care</option><option>Other</option></select></div>
+      <div class="table-wrap"><table><thead><tr><th>Medicine / product</th><th>Category</th><th>Pack / strength</th><th>Price (TZS)</th><th>Availability</th></tr></thead><tbody id="medicineRows"></tbody></table><div class="empty-state" id="emptyState" hidden>No matching products. Please contact the pharmacy.</div></div>
+      <p class="inventory-note">Catalogue entries are examples/placeholders until you enter your actual stock. Do not treat this list as confirmation that a medicine is in stock. Prescription medicines are supplied only in accordance with applicable Tanzanian rules and a valid prescription where required.</p>
+      <details class="admin-panel"><summary>✎ Manage medicine list (edit prices and stock)</summary><p>Add or update products manually here. Changes are saved in this browser only. Do not enter patient information.</p>
+        <form id="medicineForm"><div class="form-grid">
+          <div class="form-field"><label for="medName">Medicine / product name *</label><input id="medName" required placeholder="e.g. Product name" /></div>
+          <div class="form-field"><label for="medCategory">Category</label><select id="medCategory"><option>OTC medicine</option><option>Prescription medicine</option><option>First aid</option><option>Personal care</option><option>Other</option></select></div>
+          <div class="form-field"><label for="medPack">Pack / strength</label><input id="medPack" placeholder="e.g. 10 tablets / 500 mg" /></div>
+          <div class="form-field"><label for="medPrice">Price in TZS</label><input id="medPrice" type="number" min="0" step="50" placeholder="Leave blank if unconfirmed" /></div>
+          <div class="form-field"><label for="medStock">Availability</label><select id="medStock"><option>In stock</option><option>Limited stock</option><option>Ask pharmacy</option><option>Out of stock</option></select></div>
+        </div><div class="admin-actions"><button class="btn" type="submit" id="saveMedicine">Add medicine</button><button class="btn secondary" type="button" id="cancelEdit" hidden>Cancel edit</button><button class="btn secondary" type="button" id="exportMedicines">Export list (JSON)</button><label class="btn secondary" for="importMedicines" style="cursor:pointer">Import list</label><input type="file" id="importMedicines" accept="application/json,.json" hidden /></div></form>
+        <div class="admin-actions"><button class="btn danger" id="clearMedicines" type="button">Clear all products</button></div>
+      </details>
+    </div></section>
 
-  <div class="table-wrap">
-    <table>
-      <thead>
-        <tr><th>Medicine / Product</th><th>Price (TZS)</th><th>Availability</th></tr>
-      </thead>
-      <tbody id="medicineList"></tbody>
-    </table>
-  </div>
+    <section id="gallery"><div class="container">
+      <div class="section-head"><div><div class="eyebrow">Our photos</div><h2>Inside SANGAMBI PHARMACY</h2><p>Add pictures of your shop, team, shelves, or services.</p></div></div>
+      <div class="gallery-grid">
+        <div class="gallery-slot"><img id="galleryImage1" alt="Pharmacy gallery photo one" /><div id="galleryPlaceholder1"><div style="font-size:2rem">🏪</div><strong>Storefront</strong><p>Add an outside photo of your pharmacy.</p><input type="file" accept="image/*" data-target="galleryImage1" data-placeholder="galleryPlaceholder1" /></div></div>
+        <div class="gallery-slot"><img id="galleryImage2" alt="Pharmacy gallery photo two" /><div id="galleryPlaceholder2"><div style="font-size:2rem">💚</div><strong>Our team</strong><p>Add a photo of your team or service.</p><input type="file" accept="image/*" data-target="galleryImage2" data-placeholder="galleryPlaceholder2" /></div></div>
+        <div class="gallery-slot"><img id="galleryImage3" alt="Pharmacy gallery photo three" /><div id="galleryPlaceholder3"><div style="font-size:2rem">🧴</div><strong>Pharmacy interior</strong><p>Add a photo of your pharmacy interior.</p><input type="file" accept="image/*" data-target="galleryImage3" data-placeholder="galleryPlaceholder3" /></div></div>
+      </div>
+      <p class="inventory-note">Images selected here are previews in this browser. Add the image files to your website hosting when publishing so all visitors can see them.</p>
+    </div></section>
 
-  <div class="card" style="margin-top:20px">
-    <h3>Manage Products</h3>
-    <p class="small">Add products and set their prices. This simple version saves data on this device only; it does not update the website for other visitors.</p>
-    <form id="medicineForm">
-      <input id="medicineName" placeholder="Medicine or product name" required>
-      <input id="medicinePrice" type="number" min="0" step="1" placeholder="Price in TZS" required>
-      <select id="medicineAvailability" style="padding:12px;border:1px solid #ccd9cf;border-radius:7px">
-        <option>Contact for availability</option>
-        <option>Available</option>
-        <option>Out of stock</option>
-      </select>
-      <button class="btn btn-gold" type="submit">Add Product</button>
-    </form>
-    <button class="btn" style="background:#fbe8e8;color:#922" id="resetProducts" type="button">Reset Sample Products</button>
-  </div>
-</section>
+    <section class="contact-section" id="contact"><div class="container">
+      <div class="section-head"><div><div class="eyebrow">Get in touch</div><h2>We’re here to help</h2><p>Contact us to ask about products, prices, or directions.</p></div></div>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="contact-row"><div class="icon">📞</div><div><strong>Phone</strong><a href="tel:+255722134021">+255 722 134 021</a></div></div>
+          <div class="contact-row"><div class="icon">💬</div><div><strong>WhatsApp</strong><a href="https://wa.me/225622946393" target="_blank" rel="noopener">+225 622 946 393</a><br><span>Tap to start a chat</span></div></div>
+          <div class="contact-row"><div class="icon">📍</div><div><strong>Address</strong><span>SANGAMBI, Chunya, Mbeya, Tanzania</span></div></div>
+          <div class="contact-row"><div class="icon">✉️</div><div><strong>Email</strong><span id="emailDisplay">Add your pharmacy email in the field beside this card.</span></div></div>
+          <div class="form-field" style="margin-top:20px"><label for="pharmacyEmail">Pharmacy email (optional)</label><input id="pharmacyEmail" type="email" placeholder="e.g. info@sangambipharmacy.co.tz" /><button type="button" class="btn secondary" id="saveEmail" style="margin-top:8px">Save email in this browser</button></div>
+        </div>
+        <form class="contact-form" id="contactForm"><h3>Send an enquiry</h3><p style="color:var(--muted);font-size:.9rem">This form opens your email app after you add an email address. It does not send messages directly from the website.</p>
+          <div class="form-grid"><div class="form-field"><label for="customerName">Your name</label><input id="customerName" placeholder="Your name" required /></div><div class="form-field"><label for="customerEmail">Your email (optional)</label><input id="customerEmail" type="email" placeholder="you@example.com" /></div><div class="form-field wide"><label for="message">Message</label><textarea id="message" required placeholder="How can we help? Please do not include private medical records."></textarea></div><div class="wide"><button class="btn" type="submit">Prepare email ↗</button></div></div>
+        </form>
+      </div>
+      <div class="notice"><strong>Medicine safety:</strong> Use medicines only as directed by a qualified healthcare professional. Antibiotics and other prescription-only medicines should not be used without appropriate assessment and prescription. Check the label, expiry date, and storage instructions. If you have severe symptoms or an emergency, seek urgent medical care. This website is for information and enquiries, not diagnosis or emergency care.</div>
+    </div></section>
+  </main>
 
-<section id="contact">
-  <div class="section-title">
-    <h2>Contact Us</h2>
-    <p>We welcome your enquiries.</p>
-  </div>
+  <footer><div class="container"><div><strong>SANGAMBI PHARMACY</strong><p>Chunya, Mbeya, Tanzania</p></div><div><p>Phone: +255 722 134 021</p><p>WhatsApp: +225 622 946 393</p></div><p>© <span id="year"></span> SANGAMBI PHARMACY. All rights reserved.</p></div></footer>
 
-  <div class="contact-grid">
-    <div class="card">
-      <h3>Get in Touch</h3>
-      <p>📍 <strong>Address:</strong><br>Sangambi, Chunya, Mbeya, Tanzania</p>
-      <p>📞 <strong>Phone:</strong><br>
-        <a class="contact-link" href="tel:+255722134021">+255 722 134 021</a>
-      </p>
-      <p>💬 <strong>WhatsApp:</strong><br>
-        <a class="contact-link" href="https://wa.me/225622946393">+225 622 946 393</a>
-      </p>
-      <p>✉️ <strong>Email:</strong><br>
-        <span id="emailDisplay">Add your pharmacy email here</span>
-      </p>
-      <p class="small">Verify that the contact details above are correct before publishing.</p>
-    </div>
+  <script>
+    // IMPORTANT: Replace the example entries below with your verified real inventory and prices.
+    const DEFAULT_MEDICINES = [
+      { id: 'sample-1', name: 'Example product — replace this entry', category: 'Other', pack: 'Enter pack / strength', price: '', stock: 'Ask pharmacy' },
+      { id: 'sample-2', name: 'Example product — replace this entry', category: 'Other', pack: 'Enter pack / strength', price: '', stock: 'Ask pharmacy' }
+    ];
+    const STORAGE_KEY = 'sangambi_pharmacy_inventory_v1';
+    let medicines = loadMedicines();
+    let editingId = null;
+    const rows = document.getElementById('medicineRows');
+    const emptyState = document.getElementById('emptyState');
 
-    <div class="card">
-      <h3>Send an Enquiry</h3>
-      <form id="contactForm">
-        <input id="customerName" placeholder="Your name" required>
-        <input id="customerEmail" type="email" placeholder="Your email (optional)">
-        <textarea id="customerMessage" rows="4" placeholder="How can we help?" required></textarea>
-        <button class="btn btn-gold" type="submit">Send via WhatsApp</button>
-      </form>
-      <p class="small">This form opens WhatsApp with your message. It does not send email or store customer details on a server.</p>
-    </div>
-  </div>
-</section>
-</main>
+    function loadMedicines() {
+      try { const saved = localStorage.getItem(STORAGE_KEY); return saved ? JSON.parse(saved) : DEFAULT_MEDICINES.map(x => ({...x})); }
+      catch (e) { return DEFAULT_MEDICINES.map(x => ({...x})); }
+    }
+    function saveMedicines() {
+      try { localStorage.setItem(STORAGE_KEY, JSON.stringify(medicines)); }
+      catch (e) { alert('Could not save in this browser. Export the list to keep a backup.'); }
+    }
+    function formatPrice(price) {
+      if (price === '' || price === null || price === undefined) return 'Contact pharmacy';
+      return 'TZS ' + Number(price).toLocaleString('en-TZ');
+    }
+    function escapeHTML(value) {
+      return String(value ?? '').replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+    }
+    function renderMedicines() {
+      const term = document.getElementById('medicineSearch').value.trim().toLowerCase();
+      const category = document.getElementById('categoryFilter').value;
+      const filtered = medicines.filter(m => (category === 'all' || m.category === category) && [m.name,m.category,m.pack].join(' ').toLowerCase().includes(term));
+      rows.innerHTML = filtered.map(m => {
+        const stockClass = m.stock === 'In stock' ? 'pill' : 'pill ask';
+        return `<tr><td><strong>${escapeHTML(m.name)}</strong></td><td>${escapeHTML(m.category)}</td><td>${escapeHTML(m.pack || '—')}</td><td class="price">${escapeHTML(formatPrice(m.price))}</td><td><span class="${stockClass}">${escapeHTML(m.stock || 'Ask pharmacy')}</span></td></tr>`;
+      }).join('');
+      emptyState.hidden = filtered.length > 0;
+    }
+    function resetMedicineForm() {
+      document.getElementById('medicineForm').reset(); editingId = null;
+      document.getElementById('saveMedicine').textContent = 'Add medicine';
+      document.getElementById('cancelEdit').hidden = true;
+    }
+    document.getElementById('medicineForm').addEventListener('submit', event => {
+      event.preventDefault();
+      const name = document.getElementById('medName').value.trim();
+      const priceInput = document.getElementById('medPrice').value;
+      const item = { id: editingId || 'med-' + Date.now(), name, category: document.getElementById('medCategory').value, pack: document.getElementById('medPack').value.trim(), price: priceInput === '' ? '' : Number(priceInput), stock: document.getElementById('medStock').value };
+      if (!name) return;
+      if (editingId) medicines = medicines.map(m => m.id === editingId ? item : m); else medicines.push(item);
+      saveMedicines(); renderMedicines(); resetMedicineForm();
+    });
+    // The inventory table is intentionally public-facing and read-only. Manage individual entries through this edit prompt.
+    rows.addEventListener('dblclick', event => {
+      const tr = event.target.closest('tr'); if (!tr) return;
+      const visibleRows = [...rows.querySelectorAll('tr')]; const index = visibleRows.indexOf(tr);
+      const term = document.getElementById('medicineSearch').value.trim().toLowerCase(); const category = document.getElementById('categoryFilter').value;
+      const filtered = medicines.filter(m => (category === 'all' || m.category === category) && [m.name,m.category,m.pack].join(' ').toLowerCase().includes(term));
+      const item = filtered[index]; if (!item) return;
+      if (!confirm('Edit “' + item.name + '”?')) return;
+      editingId = item.id;
+      document.getElementById('medName').value = item.name; document.getElementById('medCategory').value = item.category;
+      document.getElementById('medPack').value = item.pack || ''; document.getElementById('medPrice').value = item.price === '' ? '' : item.price;
+      document.getElementById('medStock').value = item.stock || 'Ask pharmacy'; document.getElementById('saveMedicine').textContent = 'Update medicine';
+      document.getElementById('cancelEdit').hidden = false; document.querySelector('.admin-panel').open = true;
+      document.querySelector('.admin-panel').scrollIntoView({behavior:'smooth', block:'start'});
+    });
+    document.getElementById('cancelEdit').addEventListener('click', resetMedicineForm);
+    document.getElementById('medicineSearch').addEventListener('input', renderMedicines);
+    document.getElementById('categoryFilter').addEventListener('change', renderMedicines);
+    document.getElementById('clearMedicines').addEventListener('click', () => {
+      if (confirm('Clear every product from this browser? Export a backup first if needed.')) { medicines = []; saveMedicines(); renderMedicines(); resetMedicineForm(); }
+    });
+    document.getElementById('exportMedicines').addEventListener('click', () => {
+      const blob = new Blob([JSON.stringify(medicines, null, 2)], {type:'application/json'}); const url = URL.createObjectURL(blob);
+      const a = document.createElement('a'); a.href = url; a.download = 'sangambi-medicines.json'; a.click(); URL.revokeObjectURL(url);
+    });
+    document.getElementById('importMedicines').addEventListener('change', async event => {
+      const file = event.target.files[0]; if (!file) return;
+      try {
+        const data = JSON.parse(await file.text());
+        if (!Array.isArray(data) || data.some(m => !m || typeof m.name !== 'string')) throw new Error('Invalid list');
+        medicines = data.map((m,i) => ({id:String(m.id || 'import-' + Date.now() + '-' + i), name:m.name, category:m.category || 'Other', pack:m.pack || '', price:m.price ?? '', stock:m.stock || 'Ask pharmacy'}));
+        saveMedicines(); renderMedicines(); alert('Medicine list imported.');
+      } catch { alert('Could not import this file. Please select a valid exported medicine JSON file.'); }
+      event.target.value = '';
+    });
+    function previewImage(file, img, placeholder) {
+      if (!file || !file.type.startsWith('image/')) return;
+      const reader = new FileReader(); reader.onload = () => { img.src = reader.result; img.style.display = 'block'; placeholder.style.display = 'none'; }; reader.readAsDataURL(file);
+    }
+    document.getElementById('heroUpload').addEventListener('change', e => previewImage(e.target.files[0], document.getElementById('heroImage'), document.getElementById('heroPlaceholder')));
+    document.querySelectorAll('.gallery-slot input[type="file"]').forEach(input => input.addEventListener('change', e => previewImage(e.target.files[0], document.getElementById(input.dataset.target), document.getElementById(input.dataset.placeholder))));
 
-<footer>
-  <h3>SANGAMBI PHARMACY</h3>
-  <p>Chunya, Mbeya, Tanzania</p>
-  <p>Health, Care & Responsibility</p>
-  <p class="small" style="color:#d8e8de">© <span id="year"></span> Sangambi Pharmacy. All rights reserved.</p>
-</footer>
-
-<a class="whatsapp" href="https://wa.me/225622946393" target="_blank" rel="noopener">WhatsApp</a>
-
-<script>
-const STORAGE_KEY = "sangambi_pharmacy_products_v1";
-
-const sampleProducts = [
-  { name: "Product 1 - Enter name", price: "", availability: "Contact for availability" },
-  { name: "Product 2 - Enter name", price: "", availability: "Contact for availability" },
-  { name: "Product 3 - Enter name", price: "", availability: "Contact for availability" }
-];
-
-let products = loadProducts();
-
-function loadProducts() {
-  try {
-    const saved = localStorage.getItem(STORAGE_KEY);
-    return saved ? JSON.parse(saved) : [...sampleProducts];
-  } catch (error) {
-    return [...sampleProducts];
-  }
-}
-
-function saveProducts() {
-  try {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(products));
-  } catch (error) {
-    alert("Could not save data in this browser.");
-  }
-}
-
-function renderProducts() {
-  const tbody = document.getElementById("medicineList");
-  const query = document.getElementById("search").value.toLowerCase().trim();
-  tbody.replaceChildren();
-
-  const filtered = products.filter(p =>
-    p.name.toLowerCase().includes(query)
-  );
-
-  if (!filtered.length) {
-    const row = tbody.insertRow();
-    const cell = row.insertCell();
-    cell.colSpan = 3;
-    cell.textContent = "No matching products found.";
-    return;
-  }
-
-  filtered.forEach(product => {
-    const row = tbody.insertRow();
-    const nameCell = row.insertCell();
-    const priceCell = row.insertCell();
-    const availabilityCell = row.insertCell();
-
-    nameCell.textContent = product.name;
-    priceCell.className = "price";
-    priceCell.textContent = product.price === "" ? "Contact us" :
-      Number(product.price).toLocaleString("en-TZ") + " TZS";
-    availabilityCell.textContent = product.availability;
-  });
-}
-
-document.getElementById("search").addEventListener("input", renderProducts);
-
-document.getElementById("medicineForm").addEventListener("submit", function(event) {
-  event.preventDefault();
-
-  const name = document.getElementById("medicineName").value.trim();
-  const price = document.getElementById("medicinePrice").value;
-  const availability = document.getElementById("medicineAvailability").value;
-
-  if (!name || price === "" || Number(price) < 0) return;
-
-  products.push({ name, price: Number(price), availability });
-  saveProducts();
-  renderProducts();
-  this.reset();
-});
-
-document.getElementById("resetProducts").addEventListener("click", function() {
-  if (confirm("Reset the product list to the sample products?")) {
-    products = [...sampleProducts];
-    saveProducts();
-    renderProducts();
-  }
-});
-
-document.getElementById("contactForm").addEventListener("submit", function(event) {
-  event.preventDefault();
-
-  const name = document.getElementById("customerName").value.trim();
-  const email = document.getElementById("customerEmail").value.trim();
-  const message = document.getElementById("customerMessage").value.trim();
-
-  const text = `Hello Sangambi Pharmacy.%0AName: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(email || "Not provided")}%0AMessage: ${encodeURIComponent(message)}`;
-
-  window.open("https://wa.me/225622946393?text=" + text, "_blank");
-});
-
-document.getElementById("year").textContent = new Date().getFullYear();
-
-renderProducts();
-</script>
+    const EMAIL_KEY = 'sangambi_pharmacy_email_v1';
+    function showEmail(email) {
+      const display = document.getElementById('emailDisplay');
+      if (email) { display.innerHTML = `<a href="mailto:${escapeHTML(email)}">${escapeHTML(email)}</a>`; document.getElementById('pharmacyEmail').value = email; }
+      else { display.textContent = 'Add your pharmacy email in the field below.'; }
+    }
+    showEmail(localStorage.getItem(EMAIL_KEY) || '');
+    document.getElementById('saveEmail').addEventListener('click', () => {
+      const email = document.getElementById('pharmacyEmail').value.trim();
+      if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { alert('Please enter a valid email address.'); return; }
+      if (email) localStorage.setItem(EMAIL_KEY, email); else localStorage.removeItem(EMAIL_KEY);
+      showEmail(email); alert('Email updated in this browser. Add it to the website files before publishing for all visitors to see it.');
+    });
+    document.getElementById('contactForm').addEventListener('submit', event => {
+      event.preventDefault(); const email = localStorage.getItem(EMAIL_KEY) || document.getElementById('pharmacyEmail').value.trim();
+      if (!email) { alert('Please add and save the pharmacy email first, or contact the pharmacy by phone/WhatsApp.'); document.getElementById('pharmacyEmail').focus(); return; }
+      const name = document.getElementById('customerName').value.trim(); const customerEmail = document.getElementById('customerEmail').value.trim(); const message = document.getElementById('message').value.trim();
+      const subject = encodeURIComponent('Website enquiry from ' + name); const body = encodeURIComponent('Name: ' + name + '\nCustomer email: ' + (customerEmail || 'Not provided') + '\n\nMessage:\n' + message);
+      window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
+    });
+    document.getElementById('menuToggle').addEventListener('click', () => {
+      const nav = document.getElementById('mainNav'); const open = nav.classList.toggle('open'); document.getElementById('menuToggle').setAttribute('aria-expanded', String(open));
+    });
+    document.querySelectorAll('#mainNav a').forEach(a => a.addEventListener('click', () => { document.getElementById('mainNav').classList.remove('open'); document.getElementById('menuToggle').setAttribute('aria-expanded','false'); }));
+    document.getElementById('year').textContent = new Date().getFullYear();
+    renderMedicines();
+  </script>
 </body>
-  </html>
-  
+</html>
