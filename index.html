@@ -1,0 +1,437 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Sangambi Pharmacy, Chunya, Mbeya, Tanzania. Contact us for pharmacy services and medicine availability.">
+<title>SANGAMBI PHARMACY | Chunya, Mbeya</title>
+
+<style>
+:root {
+  --green: #087443;
+  --dark: #064e32;
+  --light: #eaf7ef;
+  --gold: #f5bd45;
+  --white: #ffffff;
+  --text: #24352c;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: var(--text);
+  background: #f7faf8;
+  line-height: 1.6;
+}
+header {
+  background: var(--white);
+  padding: 14px 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 12px #0000000c;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--dark);
+  font-weight: bold;
+  font-size: 19px;
+}
+.logo {
+  background: var(--green);
+  color: white;
+  width: 45px;
+  height: 45px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  font-size: 27px;
+}
+nav { display: flex; flex-wrap: wrap; gap: 16px; }
+nav a {
+  text-decoration: none;
+  color: var(--dark);
+  font-size: 14px;
+  font-weight: bold;
+}
+.hero {
+  background: linear-gradient(125deg, #064e32, #0c8b50);
+  color: white;
+  padding: 65px 6%;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 35px;
+  align-items: center;
+}
+.hero h1 { font-size: clamp(32px, 5vw, 52px); line-height: 1.15; margin: 12px 0; }
+.hero p { font-size: 17px; color: #e4f4e9; }
+.tag {
+  display: inline-block;
+  background: #ffffff20;
+  padding: 7px 13px;
+  border-radius: 30px;
+  font-size: 13px;
+}
+.btn {
+  display: inline-block;
+  border: 0;
+  padding: 12px 19px;
+  border-radius: 7px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 5px 5px 5px 0;
+}
+.btn-gold { background: var(--gold); color: #263a2c; }
+.btn-white { background: white; color: var(--dark); }
+.hero-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 18px;
+  background: #ffffff15;
+}
+section { padding: 48px 6%; }
+.section-title { text-align: center; margin-bottom: 28px; }
+.section-title h2 { color: var(--dark); margin-bottom: 5px; }
+.section-title p { color: #66766c; }
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+.card {
+  background: white;
+  padding: 23px;
+  border-radius: 13px;
+  border: 1px solid #e5eee7;
+  box-shadow: 0 5px 20px #102f1b08;
+}
+.card .emoji { font-size: 32px; }
+.card h3 { color: var(--dark); margin: 8px 0; }
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+.gallery img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 10px;
+  background: #e5eee7;
+}
+#medicines { background: var(--light); }
+.tools {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 18px 0;
+}
+input, textarea {
+  padding: 12px;
+  border: 1px solid #ccd9cf;
+  border-radius: 7px;
+  font: inherit;
+  width: 100%;
+  background: white;
+}
+.tools input { flex: 1; min-width: 150px; }
+.table-wrap { overflow-x: auto; background: white; border-radius: 10px; }
+table { width: 100%; border-collapse: collapse; min-width: 480px; }
+th, td { text-align: left; padding: 13px; border-bottom: 1px solid #e7eee8; }
+th { background: var(--dark); color: white; }
+.price { color: var(--green); font-weight: bold; }
+.small { color: #66766c; font-size: 13px; }
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+.contact-link { color: var(--green); font-weight: bold; }
+form { display: grid; gap: 12px; }
+footer {
+  background: #073c29;
+  color: white;
+  padding: 30px 6%;
+  text-align: center;
+}
+footer a { color: #f5d27d; }
+.whatsapp {
+  position: fixed;
+  bottom: 18px;
+  right: 18px;
+  background: #168b4c;
+  color: white;
+  padding: 12px 17px;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 15px #0003;
+}
+@media(max-width:700px) {
+  .hero { grid-template-columns: 1fr; padding: 42px 6%; }
+  .hero-image { height: 220px; }
+  .cards, .gallery, .contact-grid { grid-template-columns: 1fr; }
+  nav { gap: 11px; }
+  header { padding: 12px 5%; }
+  section { padding: 38px 5%; }
+}
+</style>
+</head>
+
+<body>
+<header>
+  <div class="brand">
+    <div class="logo">✚</div>
+    <div>SANGAMBI<br><span style="font-size:12px;letter-spacing:2px">PHARMACY</span></div>
+  </div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#medicines">Medicines</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div>
+    <span class="tag">Your Health Matters</span>
+    <h1>Welcome to<br>Sangambi Pharmacy</h1>
+    <p>Your health, our priority. Visit us in Chunya, Mbeya, Tanzania, for pharmacy services and information about medicine availability.</p>
+    <a class="btn btn-gold" href="#contact">Contact Us</a>
+    <a class="btn btn-white" href="#medicines">View Medicines</a>
+  </div>
+  <img class="hero-image"
+       src="https://images.unsplash.com/photo-1576602976047-174e57a47881?auto=format&fit=crop&w=900&q=80"
+       alt="Pharmacy products">
+</section>
+
+<section id="about">
+  <div class="section-title">
+    <h2>About Sangambi Pharmacy</h2>
+    <p>Professional service with care and responsibility.</p>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <div class="emoji">💊</div>
+      <h3>Medicine Availability</h3>
+      <p>Contact our pharmacy to ask about the availability of medicines and health products.</p>
+    </div>
+    <div class="card">
+      <div class="emoji">🤝</div>
+      <h3>Customer Care</h3>
+      <p>We value respectful service and helping customers understand how to use medicines safely.</p>
+    </div>
+    <div class="card">
+      <div class="emoji">📍</div>
+      <h3>Our Location</h3>
+      <p>Sangambi, Chunya, Mbeya, Tanzania.</p>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="section-title">
+    <h2>Our Gallery</h2>
+    <p>Replace these sample photos with your own pharmacy pictures.</p>
+  </div>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&w=600&q=80" alt="Medicine products">
+    <img src="https://images.unsplash.com/photo-1584017911766-d451b3d0e843?auto=format&fit=crop&w=600&q=80" alt="Healthcare products">
+    <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=600&q=80" alt="Healthcare service">
+  </div>
+</section>
+
+<section id="medicines">
+  <div class="section-title">
+    <h2>Medicine & Product List</h2>
+    <p>Enter product names and prices below. Changes are saved in this browser.</p>
+  </div>
+
+  <div class="tools">
+    <input id="search" placeholder="Search products..." aria-label="Search products">
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Medicine / Product</th><th>Price (TZS)</th><th>Availability</th></tr>
+      </thead>
+      <tbody id="medicineList"></tbody>
+    </table>
+  </div>
+
+  <div class="card" style="margin-top:20px">
+    <h3>Manage Products</h3>
+    <p class="small">Add products and set their prices. This simple version saves data on this device only; it does not update the website for other visitors.</p>
+    <form id="medicineForm">
+      <input id="medicineName" placeholder="Medicine or product name" required>
+      <input id="medicinePrice" type="number" min="0" step="1" placeholder="Price in TZS" required>
+      <select id="medicineAvailability" style="padding:12px;border:1px solid #ccd9cf;border-radius:7px">
+        <option>Contact for availability</option>
+        <option>Available</option>
+        <option>Out of stock</option>
+      </select>
+      <button class="btn btn-gold" type="submit">Add Product</button>
+    </form>
+    <button class="btn" style="background:#fbe8e8;color:#922" id="resetProducts" type="button">Reset Sample Products</button>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="section-title">
+    <h2>Contact Us</h2>
+    <p>We welcome your enquiries.</p>
+  </div>
+
+  <div class="contact-grid">
+    <div class="card">
+      <h3>Get in Touch</h3>
+      <p>📍 <strong>Address:</strong><br>Sangambi, Chunya, Mbeya, Tanzania</p>
+      <p>📞 <strong>Phone:</strong><br>
+        <a class="contact-link" href="tel:+255722134021">+255 722 134 021</a>
+      </p>
+      <p>💬 <strong>WhatsApp:</strong><br>
+        <a class="contact-link" href="https://wa.me/225622946393">+225 622 946 393</a>
+      </p>
+      <p>✉️ <strong>Email:</strong><br>
+        <span id="emailDisplay">Add your pharmacy email here</span>
+      </p>
+      <p class="small">Verify that the contact details above are correct before publishing.</p>
+    </div>
+
+    <div class="card">
+      <h3>Send an Enquiry</h3>
+      <form id="contactForm">
+        <input id="customerName" placeholder="Your name" required>
+        <input id="customerEmail" type="email" placeholder="Your email (optional)">
+        <textarea id="customerMessage" rows="4" placeholder="How can we help?" required></textarea>
+        <button class="btn btn-gold" type="submit">Send via WhatsApp</button>
+      </form>
+      <p class="small">This form opens WhatsApp with your message. It does not send email or store customer details on a server.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <h3>SANGAMBI PHARMACY</h3>
+  <p>Chunya, Mbeya, Tanzania</p>
+  <p>Health, Care & Responsibility</p>
+  <p class="small" style="color:#d8e8de">© <span id="year"></span> Sangambi Pharmacy. All rights reserved.</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/225622946393" target="_blank" rel="noopener">WhatsApp</a>
+
+<script>
+const STORAGE_KEY = "sangambi_pharmacy_products_v1";
+
+const sampleProducts = [
+  { name: "Product 1 - Enter name", price: "", availability: "Contact for availability" },
+  { name: "Product 2 - Enter name", price: "", availability: "Contact for availability" },
+  { name: "Product 3 - Enter name", price: "", availability: "Contact for availability" }
+];
+
+let products = loadProducts();
+
+function loadProducts() {
+  try {
+    const saved = localStorage.getItem(STORAGE_KEY);
+    return saved ? JSON.parse(saved) : [...sampleProducts];
+  } catch (error) {
+    return [...sampleProducts];
+  }
+}
+
+function saveProducts() {
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(products));
+  } catch (error) {
+    alert("Could not save data in this browser.");
+  }
+}
+
+function renderProducts() {
+  const tbody = document.getElementById("medicineList");
+  const query = document.getElementById("search").value.toLowerCase().trim();
+  tbody.replaceChildren();
+
+  const filtered = products.filter(p =>
+    p.name.toLowerCase().includes(query)
+  );
+
+  if (!filtered.length) {
+    const row = tbody.insertRow();
+    const cell = row.insertCell();
+    cell.colSpan = 3;
+    cell.textContent = "No matching products found.";
+    return;
+  }
+
+  filtered.forEach(product => {
+    const row = tbody.insertRow();
+    const nameCell = row.insertCell();
+    const priceCell = row.insertCell();
+    const availabilityCell = row.insertCell();
+
+    nameCell.textContent = product.name;
+    priceCell.className = "price";
+    priceCell.textContent = product.price === "" ? "Contact us" :
+      Number(product.price).toLocaleString("en-TZ") + " TZS";
+    availabilityCell.textContent = product.availability;
+  });
+}
+
+document.getElementById("search").addEventListener("input", renderProducts);
+
+document.getElementById("medicineForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  const name = document.getElementById("medicineName").value.trim();
+  const price = document.getElementById("medicinePrice").value;
+  const availability = document.getElementById("medicineAvailability").value;
+
+  if (!name || price === "" || Number(price) < 0) return;
+
+  products.push({ name, price: Number(price), availability });
+  saveProducts();
+  renderProducts();
+  this.reset();
+});
+
+document.getElementById("resetProducts").addEventListener("click", function() {
+  if (confirm("Reset the product list to the sample products?")) {
+    products = [...sampleProducts];
+    saveProducts();
+    renderProducts();
+  }
+});
+
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  const name = document.getElementById("customerName").value.trim();
+  const email = document.getElementById("customerEmail").value.trim();
+  const message = document.getElementById("customerMessage").value.trim();
+
+  const text = `Hello Sangambi Pharmacy.%0AName: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(email || "Not provided")}%0AMessage: ${encodeURIComponent(message)}`;
+
+  window.open("https://wa.me/225622946393?text=" + text, "_blank");
+});
+
+document.getElementById("year").textContent = new Date().getFullYear();
+
+renderProducts();
+</script>
+</body>
+  </html>
+  
